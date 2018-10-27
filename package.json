@@ -4,6 +4,8 @@
   "description": "HR assistant chatbot",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "start:watch": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/jshacks/jshacks2018-default/issues"
   },
-  "homepage": "https://github.com/jshacks/jshacks2018-default#readme"
+  "homepage": "https://github.com/jshacks/jshacks2018-default#readme",
+  "engines": {
+    "node": ">=10.7.0",
+    "npm": "~6.4.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
 }
