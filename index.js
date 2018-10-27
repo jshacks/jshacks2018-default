@@ -1,4 +1,5 @@
 require('dotenv').config();
+console.log(process.env);
 const express = require('express');
 const bodyParser = require('body-parser');
 const verificationController = require('./controllers/verification');
@@ -9,7 +10,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => res.send('ok'));
 app.get('/', verificationController);
 app.post('/', messageWebhookController);
 
