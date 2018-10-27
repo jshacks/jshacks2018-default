@@ -6,4 +6,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+    res.send('ok');
+});
+
 app.listen(3000, () => console.log('Mere'));
