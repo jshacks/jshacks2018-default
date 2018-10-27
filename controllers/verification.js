@@ -1,4 +1,5 @@
 module.exports = (req, res) => {
+    console.log('apeleaza')
     const hubChallenge = req.query['hub.challenge'];
     const hubMode = req.query['hub.mode'];
     const verifyTokenMatches = (req.query['hub.verify_token'] === 'jshacks');
