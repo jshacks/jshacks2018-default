@@ -3,7 +3,7 @@ console.log(process.env);
 const express = require('express');
 const bodyParser = require('body-parser');
 const verificationController = require('./controllers/verification');
-const messageWebhookController = require('./controllers/messageWebhook');
+const messageWebhookController = require('./controllers/messageWebHook');
 
 const app = express();
 
